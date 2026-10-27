@@ -1,0 +1,15 @@
+[package]
+name = "git-gathuk"
+version = "0.1.0"
+edition = "2021"
+authors = ["Stitch Developer"]
+description = "A keyboard-driven Git companion and conflict resolver TUI (Catppuccin Macchiato)"
+
+[dependencies]
+ratatui = "0.28"
+crossterm = { version = "0.28", features = ["event-stream"] }
+anyhow = "1.0"
+unicode-width = "0.2"
+
+[dev-dependencies]
+insta = "1.39"
