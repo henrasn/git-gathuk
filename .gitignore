@@ -1,0 +1,27 @@
+# Rust / Cargo build artifacts
+/target/
+
+# Editor & IDE configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.directory
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Git merge / patch temporary leftovers
+*.orig
+*.rej
+*.bak
+
+# Insta snapshot testing pending files (preserve committed .snap files)
+*.snap.new
+
+# Temporary & scratch files
+scratch/
+*.tmp
+tmp/
