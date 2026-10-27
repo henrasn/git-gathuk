@@ -1,0 +1,24 @@
+---
+source: tests/ui_snapshot_test.rs
+expression: terminal.backend()
+---
+" ~/dev/git-resolve-tui [merge: conflict]                git:(feature/payment-v2* -> main) │ GIT-GATHUK v0.1.0 "
+" [1] LOCAL (HEAD)         main:1..8 │ [*] MERGED [1/1]       UNRESOLVED │ [2] REMOTE (Incoming) incoming:1..8 "
+"   1 │ serSession {                 │   1 │ serSession {                │   1 │ serSession {                  "
+"   2 │ tring,                       │   2 │ tring,                      │   2 │ tring,                        "
+"   3 │  Uuid,                       │   3 │  Uuid,                      │   3 │  Uuid,                        "
+"       LOCAL (HEAD)                 │       LOCAL (HEAD)                │   ~                                 "
+"   4   s_valid(&self) -> bool {     │  ??   s_valid(&self) -> bool {    │   ~                                 "
+"   5                                │  ??                               │   ~                                 "
+"   6                                │  ??                               │   ~                                 "
+"   ~                                │       LICT (Hunk 1 of 1)          │   ~                                 "
+"   ~                                │  ??   c fn is_valid(&self) -> Resu│   4   c fn is_valid(&self) -> Result"
+"   ~                                │  ??   rue)                        │   5   rue)                          "
+"   ~                                │  ??                               │   6                                 "
+"   ~                                │       REMOTE (Incoming)           │       REMOTE (Incoming)             "
+"                                    │       k local │ Ctrl+r: pick remot│                                     "
+"   7 │ leType,                      │   4 │ leType,                     │   7 │ leType,                       "
+"   8 │                              │   5 │                             │   8 │                               "
+"                                    │                                   │                                     "
+"                                    │                                   │                                     "
+" NORMAL │ ^l:Loc │ ^r:Rem │ ^b:Both │ u:Undo │ :w:Save │ q:Quit               [Col +12] rustc 1.79.0 Hunk 1/1 "

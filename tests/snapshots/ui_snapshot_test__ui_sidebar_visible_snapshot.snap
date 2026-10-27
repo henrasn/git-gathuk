@@ -1,0 +1,24 @@
+---
+source: tests/ui_snapshot_test.rs
+expression: terminal.backend()
+---
+" ~/dev/git-resolve-tui [merge: conflict]                          git:(feature/payment-v2* -> main) │ GIT-GATHUK v0.1.0 "
+" CONFLICT REPOSITORY 3 files │ [1] LOCAL (HEAD)  main:1..8 │ [*] MERGED [1/1] UNRESOLVED │ [2] REMOTE     incoming:1..8 "
+"▶ session.rs   [0/1 hunks]   │   1 │ pub struct UserSession│   1 │ pub struct UserSession│   1 │ pub struct UserSession "
+"  routes.rs      [0/1 hunks] │   2 │     token: String,    │   2 │     token: String,    │   2 │     token: String,     "
+"  Cargo.toml     [0/1 hunks] │   3 │     user_id: Uuid,    │   3 │     user_id: Uuid,    │   3 │     user_id: Uuid,     "
+"                             │       <<<<<<< [1] LOCAL (HEA│       <<<<<<< [1] LOCAL (HEA│   ~   ~                      "
+"                             │   4       pub fn is_valid(&s│  ??       pub fn is_valid(&s│   ~   ~                      "
+"                             │   5           true          │  ??           true          │   ~   ~                      "
+"                             │   6       }                 │  ??       }                 │   ~   ~                      "
+"                             │   ~   ~                     │       ======= CONFLICT (Hunk│   ~   ~                      "
+"                             │   ~   ~                     │  ??       pub async fn is_va│   4       pub async fn is_val"
+"                             │   ~   ~                     │  ??           Ok(true)      │   5           Ok(true)       "
+"                             │   ~   ~                     │  ??       }                 │   6       }                  "
+"                             │   ~   ~                     │       >>>>>>> [2] REMOTE (In│       >>>>>>> [2] REMOTE (Inc"
+"                             │                             │       [Ctrl+l: pick local │ │                              "
+"                             │   7 │     role: RoleType,   │   4 │     role: RoleType,   │   7 │     role: RoleType,    "
+"                             │   8 │ }                     │   5 │ }                     │   8 │ }                      "
+"                             │                             │                             │                              "
+"                             │                             │                             │                              "
+" NORMAL [SIDEBAR]  │ j/k:Files │ Enter/l:Focus 3-Pane │ Ctrl+f/h:Hide Sidebar │ q:Quit            rustc 1.79.0 Hunk 1/1 "
